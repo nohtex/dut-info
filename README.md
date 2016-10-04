@@ -1,4 +1,4 @@
-#Tous les TPs sont ultras commentés pour bien comprendre :)
+*Tous les TPs sont ultras commentés pour bien comprendre :)*
 
 Pour compiler utilisez la commande :
 gcc -Wall -Wextra -Werror tpX.c ioap123.c
