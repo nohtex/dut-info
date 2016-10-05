@@ -32,6 +32,7 @@ int estPremier(int entier)
 	return 1;
 }
 
+//La fonction mediane NE FONCTIONNE PAS
 double mediane(double *notes, int ns)
 {
 	int index;
