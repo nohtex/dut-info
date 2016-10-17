@@ -1,8 +1,7 @@
 #include "ioap123.h"
 #include <time.h>
 #include <stdio.h>
-#define NUML 50
-#define NUMC 50
+#include <signal.h>
 
 int **allouerTab2D(int nbL, int nbC);
 void afficherTableau(int l, int c, int **damier);
@@ -40,8 +39,7 @@ int main()
 
 	print_text("\n\nNEW GENERATION:\n");
 	afficherTableau(uy, ux, damier);
-	for(int i = 0; i < 200; i++)
-	{
+	for (int i = 0; i < 500; i++){
 		system("clear");
 		damier = nGen(uy, ux, damier);
 		afficherTableau(uy, ux, damier);
@@ -164,7 +162,7 @@ void afficherTableau(int l, int c, int **damier)
 		for (j = 0; j < c; j++)
 		{
 			if(damier[i][j] == 1)
-				print_char('*');
+				print_text("*");
 			else
 				print_char(' ');
 			print_char('|');
