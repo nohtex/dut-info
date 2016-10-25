@@ -1,7 +1,7 @@
 #include "ioap123.h"
 #include <time.h>
 #include <stdio.h>
-#include <signal.h>
+#include <unistd.h>
 
 int **allouerTab2D(int nbL, int nbC);
 void afficherTableau(int l, int c, int **damier);
@@ -40,10 +40,10 @@ int main()
 	print_text("\n\nNEW GENERATION:\n");
 	afficherTableau(uy, ux, damier);
 	for (int i = 0; i < 500; i++){
-		system("clear");
+		printf("\033[2J");
 		damier = nGen(uy, ux, damier);
 		afficherTableau(uy, ux, damier);
-		system("sleep 0.1");
+		usleep(100*1000);
 	}
 	print_text("\n\n");
 	return 0;
