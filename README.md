@@ -1,5 +1,8 @@
 ##TPs du DUT Informatique à l'université de Valenciennes (situé à Maubeuge)
 
+###Pour les TPs de Bash et Base de données
+Seuls les fichiers de rendu sont présents sur ce repo avec des screens des programmes effectués.
+
 ###Pour les programmes en C
 Pour compiler utilisez la commande :
 gcc -Wall -Wextra -Werror tpX.c ioap123.c
