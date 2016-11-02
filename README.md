@@ -4,6 +4,7 @@
 Seuls les fichiers de rendu sont présents sur ce repo avec des screens des programmes effectués.
 
 ###Pour les programmes en C
+**Premièrement, si vous utilisez Eclipse pour faire du C allez bien vous faire foutre.**
 Pour compiler utilisez la commande :
 gcc -Wall -Wextra -Werror tpX.c ioap123.c
 
