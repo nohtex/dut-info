@@ -1,3 +1,6 @@
+##TPs du DUT Informatique à l'université de Valenciennes (situé à Maubeuge)
+
+###Pour les programmes en C
 Pour compiler utilisez la commande :
 gcc -Wall -Wextra -Werror tpX.c ioap123.c
 
