@@ -4,15 +4,66 @@
 void lireFichier(char *nom, int **grille);
 int ** allouer2D(int l, int c);
 void afficherGrille(int **g);
+int verifierGrille(int **g);
 
 int main (void)
 {
 	int** laGrille ;
 	laGrille = allouer2D (9 ,9);
-	lireFichier ("grilleOK.txt", laGrille );
+	lireFichier ("grilleNOK.txt", laGrille );
+	printf("\n\n");
+	print_int(verifierGrille(laGrille));
+	printf("\n\n");
 	afficherGrille ( laGrille );
 	return 0;
 }
+
+int verifierGrille(int **g)
+{
+	int i, j, k;
+	for (i=0; i < 9; i++)//foreach lines
+	{
+		for(j=0; j < 9; j++)//foreach column
+		{
+			//VERIF LINE
+			for(k=0; k < 9; k++)
+			{
+				if(k != j){
+					//printf("%i %i\n", g[i][j], g[i][k]);
+					if(g[i][j] == g[i][k]){
+						printf("g[i][j]=%i g[i][k]=%i i=%i j=%i k=%i\n\n", g[i][j], g[i][k], i, j, k);
+						return 0;
+					}
+				}
+			}
+
+			//VERIF COLUMN
+			for(k=0; k < 9; k++)
+			{
+				if (k != i){
+					if(g[i][j] == g[k][j])
+					{
+						printf("g[%i][%i]=%i g[%i][%i]=%i i=%i j=%i k=%i\n",i, j, g[i][j], k, j, g[k][j], i, j, k);
+						return 0;
+					}
+				}
+			}
+
+			//VERIF CASE
+			/*int cases[9][9], l, m;
+			for(k=0; k<9; k++)
+			{
+				for(l=0; l<9; l++)
+				{
+					
+				}	
+			}*/
+		}
+	}
+	return 1;
+}
+
+
 
 void lireFichier ( char * nom , int ** grille )
 {
