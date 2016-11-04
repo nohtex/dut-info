@@ -1,7 +1,7 @@
 CREATE TABLE categories(
    Code_categorie CHAR(2) PRIMARY KEY,
    Libelle_categorie CHAR(50),
-   Montant_cotisation money
+   Montant_cotisation int
 );
 
 CREATE TABLE stages(
