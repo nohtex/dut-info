@@ -8,7 +8,7 @@ CREATE TABLE stages(
    Num_stage INT PRIMARY KEY,
    du date,
    au date,
-   prix_forfaitaire money
+   prix_forfaitaire int
 );
 
 CREATE TABLE villes(
