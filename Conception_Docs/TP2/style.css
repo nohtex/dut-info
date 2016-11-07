@@ -1,12 +1,12 @@
 body{
   background-color: #F6F6F6;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content{
-  width: 95%;
-  margin-left: auto;
+  width: 30%;
+  margin-left: 2%;
   margin-right: auto;
-  font-family: "Open Sans";
 }
 
 .head{
@@ -21,7 +21,11 @@ p{
   padding: 0;
 }
 
+h3{
+  color: #696969;
+}
+
 a{
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
